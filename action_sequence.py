@@ -15,9 +15,13 @@ This will find all images in the directory given by foldername and produce a new
 """
 
 folder = sys.argv[1]
+out_fname = 'out.png'
+
 source_fnames = reversed(sorted(os.listdir(folder)))
 images = []
 for f in source_fnames:
+    if f == out_fname:
+        continue
     img = Im.open(os.path.join(folder, f))
     images.append(np.expand_dims(np.array(img), 3))
 
@@ -32,4 +36,4 @@ for img in images:
     mask = img != med_img
     out_img[mask] = img[mask]
 out_img = Im.fromarray(out_img)
-out_img.save(os.path.join(folder, 'out.png'))
+out_img.save(os.path.join(folder, out_fname))
