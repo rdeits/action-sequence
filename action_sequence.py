@@ -7,6 +7,11 @@ import sys
 
 """
 Take a set of images of some action sequence and combine them into a single image showing all of the poses of the moving body. We do this by finding the median image of all the frames, then extracting only the pixels which do *not* match the median image from each source file.
+
+usage:
+    python action_sequence.py foldername
+
+This will find all images in the directory given by foldername and produce a new file in that directory called out.png which contains the multiple-exposure action sequence.
 """
 
 folder = sys.argv[1]
