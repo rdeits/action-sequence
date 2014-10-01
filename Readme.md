@@ -1,6 +1,10 @@
 # Python Action Sequence
 
-Turn this:
+Usage:
+
+	python action_sequence.py <foldername>
+
+to turn this:
 
 <img src="https://raw.githubusercontent.com/rdeits/action-sequence/master/samples/1.png" style="width:50%;float:left"> <img src="https://raw.githubusercontent.com/rdeits/action-sequence/master/samples/2.png" style="width:50%;float:left">
 <img src="https://raw.githubusercontent.com/rdeits/action-sequence/master/samples/3.png" style="width:50%;float:left"> <img src="https://raw.githubusercontent.com/rdeits/action-sequence/master/samples/4.png" style="width:50%;float:left">
